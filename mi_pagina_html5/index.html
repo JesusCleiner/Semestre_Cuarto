@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ejemplo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi Página</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <article>
+                <h2>¿Quiénes somos?</h2>
+                <h3>Misión y visión</h3>
+                <p>Esta página fue creada para <strong>demostrar conocimientos básicos de HTML5</strong> y buenas prácticas de estructura web. Aprender HTML es <em>la base del desarrollo web moderno</em>.</p>
+            </article>
+        </section>
+
+        <section id="galeria">
+            <h2>Imagen de ejemplo</h2>
+            <img src="assets/img/imagen1.jpg" alt="Descripción de la imagen" width="600">
+
+            <h2>Video de ejemplo</h2>
+            <video width="600" controls>
+                <source src="assets/video/video1.mp4" type="video/mp4">
+                
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+
+        <section>
+            <h2>Listas de prueba</h2>
+            <h3>Lista ordenada:</h3>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <h3>Lista desordenada:</h3>
+            <ul>
+                <li>Frontend</li>
+                <li>Backend</li>
+                <li>Fullstack</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Enlace útil</h2>
+            <p>Visita <a href="https://www.esic.edu/rethink/tecnologia/html5-que-es-caracteristicas-y-como-funciona-c    " target="_blank">HTML5</a> para aprender más sobre html5</p>
+        </section>
+
+        <section>
+            <h2>Horario de clases</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Materia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>HTML y CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>Proyecto Final</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Sitio Web - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
