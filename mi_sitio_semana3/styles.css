@@ -1,0 +1,24 @@
+/* Cambiar color del botón principal */
+.btn-primary {
+  background-color: #ff5733;
+  border-color: #ff5733;
+}
+
+/* Hover con animación */
+.btn-primary:hover {
+  background-color: #e94e1b;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Redondear bordes de cards */
+.card {
+  border-radius: 15px;
+}
+
+/* Media Query para cambiar color de fondo en móviles */
+@media (max-width: 576px) {
+  body {
+    background-color: #f2f2f2;
+  }
+}
