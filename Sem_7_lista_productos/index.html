@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Productos</title>
+  <style>
+    #formulario-producto {
+      display: none;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Productos</h1>
+
+  <ul id="lista-productos">
+    <!-- Productos se insertan dinámicamente aquí -->
+  </ul>
+
+  <button id="btn-mostrar-formulario">Agregar nuevo producto</button>
+
+  <div id="formulario-producto">
+    <h2>Nuevo producto</h2>
+    <label>
+      Nombre:
+      <input type="text" id="nombre" placeholder="Ej: Teclado">
+    </label><br>
+    <label>
+      Precio:
+      <input type="number" id="precio" placeholder="Ej: 45">
+    </label><br>
+    <label>
+      Descripción:
+      <input type="text" id="descripcion" placeholder="Ej: Teclado mecánico RGB">
+    </label><br><br>
+    <button id="btn-insertar">Insertar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
