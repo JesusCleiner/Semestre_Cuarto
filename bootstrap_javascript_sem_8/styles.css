@@ -1,0 +1,41 @@
+/* Cambiar color y fuente del título principal */
+h2 {
+    color: #007BFF; /* Azul Bootstrap pero más brillante */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+/* Botón de alerta personalizado */
+button.btn-primary {
+    background-color: #28a745; /* Verde agradable */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+    cursor: pointer;
+}
+
+/* Pie de página enlaces */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Pequeño margen para los enlaces del footer */
+footer a {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Mejorar la tabla para pantallas pequeñas */
+@media (max-width: 576px) {
+    table {
+        font-size: 14px;
+    }
+}
+
+.carousel-item img {
+    max-height: 200px;
+    object-fit: contain;
+}

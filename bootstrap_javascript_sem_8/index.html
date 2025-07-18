@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas de Botellas PET</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Botellas PET</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inicio - Carrusel -->
+    <section id="inicio" class="container my-4">
+        <h2 class="text-center mb-4">Bienvenido a Ventas de Botellas PET</h2>
+        <!-- Botón de Alerta -->
+        <div class="text-center mb-3">
+            <button class="btn btn-primary" onclick="mostrarAlerta()">¡Haz clic para conocer nuestras ofertas!</button>
+        </div>
+
+        <!-- Carrusel -->
+        <div id="carouselBotellas" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Puedes ir cambiando las imágenes -->
+                <div class="carousel-item active">
+                    <img src="img/botella1.jpeg" class="d-block w-100" alt="Botella 250ml">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/botella2.jpeg" class="d-block w-100" alt="Botella 500ml">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/botella3.jpeg" class="d-block w-100" alt="Botella 1000ml">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBotellas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBotellas" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Productos - Tabla -->
+    <section id="productos" class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Producto</th>
+                    <th>Capacidad</th>
+                    <th>Precio (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Botella PET 250ml</td><td>250ml</td><td>0.25</td></tr>
+                <tr><td>Botella PET 500ml</td><td>500ml</td><td>0.30</td></tr>
+                <tr><td>Botella PET 1000ml</td><td>1000ml</td><td>0.50</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contacto - Formulario -->
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form id="formContacto">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre *</label>
+                <input type="text" class="form-control" id="nombre" required>
+                <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico *</label>
+                <input type="email" class="form-control" id="correo" required>
+                <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje *</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        Síguenos en: 
+        <a href="#" class="text-white ms-2">Facebook</a> | 
+        <a href="#" class="text-white ms-2">Instagram</a> | 
+        <a href="#" class="text-white ms-2">Twitter</a>
+    </footer>
+
+    <!-- Bootstrap JS + Script propio -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
