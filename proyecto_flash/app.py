@@ -1,13 +1,18 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Ruta principal
+# Página de inicio -> usa templates/templates/index.html
 @app.route('/')
-def home():
-    return "¡Hola, Flask está funcionando! 🚀"
+def index():
+    return render_template('index.html')
 
-# Ruta dinámica (con tu nombre)
+# Página "Acerca de" -> usa templates/about.html
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+# Ruta dinámica (saludo por nombre)
 @app.route('/usuario/<nombre>')
 def usuario(nombre):
     return f'Bienvenido, {nombre}!'
